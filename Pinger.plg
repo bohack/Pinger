@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Pinger - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/Pinger.res" /d "NDEBUG" /d "_AFXDLL" "C:\dev\Pinger\Pinger.rc"" 
+Creating temporary file "C:\TEMP\RSPDF.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Pinger.pdb" /machine:I386 /out:"Release/Pinger.exe" 
+.\Release\cbtext.obj
+.\Release\HelpDialog.obj
+.\Release\Pinger.obj
+.\Release\PingerDlg.obj
+.\Release\sockeng.obj
+.\Release\StdAfx.obj
+.\Release\Pinger.res
+]
+Creating command line "link.exe @C:\TEMP\RSPDF.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+Pinger.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,256 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Pinger.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PINGER_DIALOG DIALOGEX 0, 0, 319, 242
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Pinger v1.0 - Rhino9"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Timeout:",IDC_STATIC,11,30,28,8
+    EDITTEXT        IDC_TIMEOUT,43,28,27,12,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,75,30,10,9
+    LTEXT           "Num. Passes:",IDC_STATIC,98,30,44,8
+    EDITTEXT        IDC_PASSES,146,28,17,12,ES_AUTOHSCROLL
+    LTEXT           "From:",IDC_STATIC,12,12,18,10
+    EDITTEXT        IDC_O1,33,10,17,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_O2,55,10,17,12,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_O3,78,10,17,12,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_O4,101,10,17,12,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_TRANSPARENT
+    LTEXT           ".",IDC_STATIC,52,13,8,10
+    LTEXT           ".",IDC_STATIC,74,13,8,10
+    LTEXT           ".",IDC_STATIC,97,13,8,10
+    LTEXT           "To:",IDC_STATIC,136,12,12,10
+    EDITTEXT        IDC_O5,151,10,17,12,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_O6,173,10,17,12,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_O7,196,10,17,12,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_O8,219,10,17,12,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_TRANSPARENT
+    LTEXT           ".",IDC_STATIC,182,13,8,10
+    LTEXT           ".",IDC_STATIC,204,13,8,10
+    LTEXT           ".",IDC_STATIC,227,13,8,10
+    PUSHBUTTON      "Ping",IDC_SCAN,253,18,45,13
+    LTEXT           "",IDC_STATUS,11,45,109,8
+    PUSHBUTTON      "Clear",IDC_CLEAR,37,220,50,14
+    PUSHBUTTON      "Copy",IDC_COPY,103,220,50,14
+    PUSHBUTTON      "Save...",IDC_SAVE,169,220,50,14
+    PUSHBUTTON      "Help...",IDC_ABOUT,235,220,50,14
+    LISTBOX         IDC_LIST,7,57,305,158,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Resolve Hosts",IDC_RESOLVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,179,30,62,10
+END
+
+IDD_HELP DIALOG DISCARDABLE  0, 0, 186, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pinger v1.0 - Rhino9"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,68,152,50,14
+    LTEXT           "Pinger v1.0",IDC_STATIC,7,7,37,8
+    LTEXT           "by horizon - jmcdonal@unf.edu",IDC_STATIC,7,17,98,8
+    LTEXT           "From and To IP: The range of IP addresses you wish to ping.",
+                    IDC_STATIC,7,33,172,20
+    LTEXT           "Timeout: The amount of time in milliseconds to wait for incoming pings, after sending all of the requests.",
+                    IDC_STATIC,7,52,172,20
+    LTEXT           "Number of Passes: The number of times to send a ping request to each host in the specified range of IPs.",
+                    IDC_STATIC,7,73,172,18
+    LTEXT           "Resolve Hostnames: An option to attempt to resolve numeric IPs of the alive hosts into DNS hostnames.",
+                    IDC_STATIC,7,94,172,21
+    LTEXT           "Feel free to email me bug reports, patches, coding advice, etc. Source code to this program is available on the Rhino9 web site.",
+                    IDC_STATIC,7,120,172,24
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Pinger MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Pinger\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Pinger.EXE\0"
+            VALUE "ProductName", "Pinger Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PINGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+
+    IDD_HELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "gui_grfx.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Pinger.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
